@@ -1,1 +1,53 @@
-<!DOCTYPE html> <html lang="ja"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>櫻坂46 ミート＆グリート参加方法</title> <style> body{ font-family: "Yu Gothic",sans-serif; background:#f5f5f5; margin:0; padding:20px; text-align:center; } .container{ max-width:700px; margin:auto; } h1{ color:#0f8d64; } .card{ background:white; border-radius:15px; padding:25px; margin-top:20px; box-shadow:0 5px 15px rgba(0,0,0,.15); } button{ margin-top:20px; background:#0f8d64; color:white; border:none; border-radius:10px; padding:12px 25px; font-size:16px; cursor:pointer; } button:hover{ background:#0b6f4f; } .step{ display:none; } .step.active{ display:block; } a.link{ display:inline-block; margin-top:15px; text-decoration:none; color:white; background:#ff5d73; padding:12px 20px; border-radius:10px; } </style> </head> <body> <div class="container"> <h1>🌸櫻坂46 ミート＆グリート参加方法🌸</h1> <div class="card"> <div class="step active"> <h2>スタート！</h2> <p> このページではミーグリ参加方法を順番に案内します。 </p> <button onclick="nextStep()">始める</button> </div> <div class="step"> <h2>① CDを購入</h2> <p> 応募券付きCDを購入します。 </p> <button onclick="nextStep()">次へ</button> </div> <div class="step"> <h2>② 応募する</h2> <p> シリアルコードを使って応募します。 </p> <button onclick="nextStep()">次へ</button> </div> <div class="step"> <h2>③ 当落確認</h2> <p> 当選したら参加できます！ </p> <button onclick="nextStep()">次へ</button> </div> <div class="step"> <h2>④ 当日の準備</h2> <p> 本人確認書類を用意し、開始時間までにログインしましょう。 </p> <button onclick="nextStep()">次へ</button> </div> <div class="step"> <h2>🎉 ミーグリ参加！</h2> <p> 時間になったら参加ボタンを押してメンバーとお話ししましょう！ </p> <a class="link" href="https://fortunemusic.jp/" target="_blank"> 公式サイトを見る </a> </div> </div> </div> <script> let current=0; const steps=document.querySelectorAll(".step"); function nextStep(){ steps[current].classList.remove("active"); current++; if(current<steps.length){ steps[current].classList.add("active"); } } </script> </body> </html>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻坂46 ミート＆グリート参加方法</title>
+    
+    <style>
+      body{ font-family: "Yu Gothic",sans-serif; background:#f5f5f5; margin:0; padding:20px; text-align:center; } 
+      .container{ max-width:700px; margin:auto; }
+      h1{ color:#0f8d64; } 
+      .card{ background:white; border-radius:15px; padding:25px; margin-top:20px; box-shadow:0 5px 15px rgba(0,0,0,.15); } 
+      button{ margin-top:20px; background:#0f8d64; color:white; border:none; border-radius:10px; padding:12px 25px; font-size:16px; cursor:pointer; }
+      button:hover{ background:#0b6f4f; } .step{ display:none; } .step.active{ display:block; } a.link{ display:inline-block; margin-top:15px; text-decoration:none; color:white; background:#ff5d73; padding:12px 20px; border-radius:10px; }
+    </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>🌸櫻坂46 ミーグリ参加方法🌸</h1>
+      <div class="card"> <div class="step active">
+        
+      <h2>スタート！</h2>
+     <!--   <p> このページではミーグリ参加方法を順番に案内します。 </p>-->
+     <!--   <button onclick="nextStep()">始める</button> </div>-->
+     <!-- <div class="step"> -->
+      <h2>① CDを購入</h2> 
+          <p> 応募券付きCDを購入します。 </p>
+          <button onclick="nextStep()">次へ</button> 
+        </div> <div class="step">
+      <h2>② 応募する</h2>
+          <p> シリアルコードを使って応募します。 </p>
+          <button onclick="nextStep()">次へ</button> 
+        </div>
+        <div class="step"> 
+      <h2>③ 当落確認</h2>
+          <p> 当選したら参加できます！ </p>
+          <button onclick="nextStep()">次へ</button>
+        </div> <div class="step"> 
+      <h2>④ 当日の準備</h2>
+          <p> 本人確認書類を用意し、開始時間までにログインしましょう。 </p>
+          <button onclick="nextStep()">次へ</button>
+        </div>
+        <div class="step"> 
+      <h2>🎉 ミーグリ参加！</h2>
+          <p> 時間になったら参加ボタンを押してメンバーとお話ししましょう！ </p>
+          <a class="link" href="https://fortunemusic.jp/" target="_blank"> 公式サイトを見る </a> 
+        </div> 
+      </div>
+    </div>
+    <script> let current=0; const steps=document.querySelectorAll(".step"); function nextStep(){ steps[current].classList.remove("active"); current++; if(current<steps.length){ steps[current].classList.add("active"); } }
+    </script>
+  </body> </html>
